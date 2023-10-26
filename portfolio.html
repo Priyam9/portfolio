@@ -1,0 +1,421 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--for CDN links and External Files -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="project.css">
+
+    <title>PortFolio</title>
+    </head>
+    <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <a class="navbar-brand" href="#">PriyamSingh</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+    <li class="nav-item active">
+    <a class="nav-link" href="portfolio.html">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="about.html">About</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="project.html">Projects</a>
+    </li>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+    Contact
+    </a>
+    <div class="dropdown-menu">
+    <a class="dropdown-item" href="https://api.whatsapp.com/send?phone=9167577044" target="_blank">Send Message</a>
+    <a class="dropdown-item" href="mailto:spriyam314@gmail.com" target="_blank">Email</a>
+    <a class="dropdown-item" href="https://github.com/your-username/Priyam9" target="_blank">GitHub</a>
+    </div>
+    </li>
+    </ul>
+    </div>
+    </nav>
+
+    <!-- jumbotron bootstrap4.6 -->
+    <div class="jumbotron">
+    <h1 class="display-4">Hello, My Name Is PriyamSingh!</h1>
+    <p class="lead">I am a FullStack Python Developer.</p>
+    <hr class="my-4">
+    <p>Looking For a Resume?..</p>
+    <a class="btn btn-primary btn-lg" href="PriyamSinghResume.pdf" role="button">Find It Here</a>
+    </div><br>
+
+    <!-- heading -->
+    <h1 class="projectheading">Here Are some Projects.</h1><br>
+
+    <!-- flipcard-we have 6 flip cards here we have used 2 grids whith same class named container which makes it easier to call both grid at once -->
+    <!-- grid1 -->
+    <div class="container">
+    <div class="row">
+
+    <div class="col">
+    <div class="flip-card">
+    <div class="flip-card-inner">
+    <div class="flip-card-front">
+    <img src="data:image/jpeg;base64,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" alt="Avatar" style="width:100%;height:300px;">
+    </div>
+    <div class="flip-card-back">
+    <h1>Web Based Crud Application</h1> 
+    <p>using Python, Django, HTML, CSS, and MySQL</p> 
+    <p>Project Description</p>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="col">
+    <div class="flip-card">
+    <div class="flip-card-inner">
+    <div class="flip-card-front">
+    <img src="data:image/png;base64,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" alt="Avatar" style="width:100%;height:300px;">
+    </div>
+    <div class="flip-card-back">
+    <h1>Adidas Online Shopping Experience - Front-End Replica</h1> 
+    <p>Html,CSS,JavaScript,Bootstrap</p> 
+    <p>Project Description</p>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="col">
+    <div class="flip-card">
+    <div class="flip-card-inner">
+    <div class="flip-card-front">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAB6CAMAAABHh7fWAAAAw1BMVEX1+Pn///8AAAB5eXn4+/zp7vMdHh6Oj4/+ZG/8///g4+MqKyumqKh1dnaKyf7a3d6vr6/n6upOT0+xMjv9RlRTVFQySVx4wf5etv9jvf87cJbFx8jG1N5PVVmeoKD9WWWROT9FR0k2NjfZ5+xiJiu8yM2Bg4MPDw8RGB+8vr9jZGU+Pz94r9748fNsbm5bXF2qtr+Cveo6FxmQKC9lHSKnQUh2LDLvXmiDMzmWoKW0R08hCQvFN0J/JixZrOpSn940YoTCJRh4AAAFbElEQVRoge2bfX+bNhDHBRYmwmagtF670bGYdHhAZ3fLsmzdlvT9v6rpJPFo8SDAafcJvz9aE0BfdJx0dwKQ0RQNM3MG2WcNN4Waf0jm4IJcXXQwF9k0Yz00AmNnsc20Ns3fbgrd3f0OrdnDlA5hN9Bg7hTzn+wi3l/l+vH161dsF+0zYqWZXnYDbbMTHIyYSKRAi129Ir60+UoD7ZrmWjQ/FX2IgX0cjl6V6M3EXr/b9rDb0cwAN1PQP93+1T3GWtEI2fdX09A97HY0/uVqKlqwV1i71zOgbz929PvCaMFW+1qHwY050IJ90kJjJ/3jYQb0LR9jqQ6anEzzzynoj++kuK8dz0JkB3rqRFqg29jPgW5hD0B/un/QRGOIXNkPpTbc17Am+hOcdaOHRnStyh1sLfTDe3HW3/9ooYky2XF10Pflef/eaaAR9la7us6jdyda2snf5D8Ho9mEVN2yLGutgb4WtMwjBnUl2hqMrksTzWchM8QYuhDwju+NHsQ8aAR52pFKGMFsKx0J1kYjYhCjNDBsPRt6Ri3oBb2gF/SCfjFogigXkvHbQBQZLZeFDUKIUYtziFoGGYfGQSQVQLKAklMWZceAqODYOV0zuUFeruEgzaLo5MvL1s1SijXDlLC293JjhRRsfKztxTSV29ceHoPOmzNXBNNDkZkqU5VdcSw/ucgozTXFI+41smOWkG3sEGGRIp5ibohYkaww9HrHgczmBk8id2LdTqRzumjD2ENlTBCBOmYDy3VBkRFjIpWjU7H3yEzE/jt47GgaiWsZMbgIR4vFJAE0IE31CThWKMUtytAnURdnlITsmAQuiXhgJDIFja5h9ZL7E91Ii+duZ0YVtA03l7A2Iku4H/v7fhqa3WNXjtEISifW6bIiQiWa9XftgI32sgF2u6NJaMwMuRe99pir22Dw2DxwCYNKdAwuAf8ehGPDNaeT0NCY6bO5Chsw4hI4gFCHi5K81xhj1vxOOGXMj4a7Hk7rNTcvcygHyBs520nlHr5zvJ0gGTAJHD1M+QItneTh3H8KJcXMXOpUTiGN4pp3ehx6x6cE4hZtbRXkEs1HMTe0UCyO1ke7sAghzBuKGnsfqMhYslhBLE5MRIUc+aPCB7RIwzD/bdDEjsMAqciwbrPd+olXhBaCgtCuHK2fKmBSIbGArIyY+ZGkthfXtv8/WcqCfkHoIhtoeu/F0djaVp5SOuoBfRE0z3OUU3fLAxy1xkykkGxUJRMPvvzpDpddQQ9enmUh8PCz1CGPfiBTSysRryGj8oeiWQT49lfQh8fHzyW6eSP6lGcpXrw1dNDfgN68/e77Sq9xuN5oyJOpgqXx7KMN3VrzKWXk1YdlzYAeoS+MPhuTY9C4W2q0d7QHP/FpRWOvW4oymDlZxFLEqWi8ah9JXHsVWmtK4eP6A+jpqTqunR6yTEsV6MET6a7RYGHwjZKnOnIs2q63ty+cDPndUgwF3Xh9XSWvvVqi2iWFi+vGaxxUpFq9GS79EqB7sF4SPZ8W9IL+GtG4e564HJpNKeXkmIx9aD6u1/UwEShnmn6NQPPFMmX4oFsN+SMWpScEzZps/SW7sgR4fJpSApxGopUJUnxYa2jEenhHCeBoiI5YLRyfDCsy49nQ+nquXl8QTWi3Judm7R5u9xS5x6kZaTmu3zy+1RvXlysBDkpeReevhk2bw7PCyZyet/EVS+aai1eo/n5gJXJ1VwBzlAAoCQttp4zqMQ8gvlSWMqcW9IJe0C8T7V4S3b1kZytj3gxoeFmj+9X0yqdkMwojC55wB51oDC/cREO/kxuqeBVBxO9eGZ7zs8GmGp2+4MeSTSVN0vlHKDN9IlpXFp5/cfgfSxq43Qx0jRoAAAAASUVORK5CYII=" alt="Avatar" style="width:100%;height:300px;">
+    </div>
+    <div class="flip-card-back">
+    <h1>To-Do List</h1> 
+    <p>Using Python,MySql & Tkinter</p> 
+    <p>Project Description</p>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    <br>
+    <!-- grid2 -->
+    <div class="container">
+    <div class="row">
+
+    <div class="col">
+    <div class="flip-card">
+    <div class="flip-card-inner">
+    <div class="flip-card-front">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlQyzfHt9xZzTKJHxk4Vs8ylVCpzbBOBVn9abJJkbshi4iiIMozjA-ICzYOCOBun-dd2Y&usqp=CAU" alt="Avatar" style="width: 100%;height:300px;">
+    </div>
+    <div class="flip-card-back">
+    <h1>Portfolio</h1> 
+    <p>using</p> 
+    <p>Project Description</p>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="col">
+    <div class="flip-card">
+    <div class="flip-card-inner">
+    <div class="flip-card-front">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUrwF3NM5fqTIKcP2TxmvnHfN7_yWgrZ-r1Q&usqp=CAU" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+    <h1>Employee Registration & Management System</h1> 
+    <p>using Tkinter & MySql</p> 
+    <p>project Description</p>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="col">
+    <div class="flip-card">
+    <div class="flip-card-inner">
+    <div class="flip-card-front">
+    <img src="data:image/png;base64,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" alt="Avatar" style="width:100%;height:300px;">
+    </div>
+    <div class="flip-card-back">
+    <h1>Gym Management</h1> 
+    <p>Using Html,CSS,Bootstrap,Django,Mysql</p> 
+    <p>Project Description</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <br><br>
+
+    <!-- about info consists of grid -->
+
+    <h1 class="abt">About</h1><br>
+
+    <!-- grid1 -->
+    <div class="abtgrid">Skills
+    <div class="row">
+    <div id="c1" class="col">Html,Css,JavaScript</div>
+    <div id="c2" class="col">BootStrap,Jquery,AngularJs</div>
+    <div class="w-100"></div>
+    <div id="c3" class="col">Python,Tkinter</div>
+    <div id="c4" class="col">Django,MySQL</div>
+    </div>
+    </div>
+
+    <!--grid2-Here we have used span to change color of specific contents -->
+    <div class="abtinf">
+    <p><span class="abi">ABOUT ME</span></p>
+    <h1>A Full-Stack Web Developer Based in Mumbai</h1>
+    <div class="place">
+    <div class="coll">
+      <p>Name:<span class="abi">PriyamSingh</span></p>
+      <p>Date Of Birth:<span class="abi">09-05-2001</span></p>
+      <p>Address:<span class="abi">MUMBAI,INDIA</span></p>
+    </div>
+    <div class="coll2">
+      <p>Pin code:<span class="abi">421201</span></p>
+      <p>Email:<span class="abi">spriyam314@gmailcom</span></p>
+      <p>Phone:<span class="abi">+91 9167577044</span></p>
+    </div>
+    </div><br><br>
+
+    <!-- grid3 consists of 3 inner grids  -->
+    <div class="skillprogressbar">
+    <!-- inner grid1 -->
+    <div class="progbar">
+    <div class="row">
+
+    <div class="col">Html
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+    </div>
+    </div>
+
+    <div class="col">css
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+    </div>
+    </div>
+
+    <div class="col">JavaScript
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+    </div>
+    </div>
+
+    <div class="w-100"></div>
+    </div>
+    </div>
+
+    <!-- inner grid 2 -->
+    <div class="progbar">
+    <div class="row">
+
+    <div class="col">AngularJs
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+    </div>
+    </div>
+
+    <div class="col">Jquery
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+    </div>
+    </div>
+
+    <div class="col">BootStrap
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+    </div>
+    </div>
+
+    <div class="w-100"></div>
+    </div>
+    </div>
+
+    <!-- inner grid 3 -->
+    <div class="progbar">
+    <div class="row">
+
+    <div class="col">Python
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+    </div>
+    </div>
+
+    <div class="col">Django
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+    </div>
+    </div>
+
+    <div class="col">MySQL
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
+    </div>
+    </div>
+
+    <div class="w-100"></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <br>
+    <br>
+
+    <!-- Contact Us -->
+    <div class="contact-clean">
+    <form onsubmit="return false;">
+    <h2 class="text-center">Contact us</h2>
+    <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
+    <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+    <div class="form-group"><textarea class="form-control" name="message" placeholder="Message" rows="14"></textarea></div>
+    <div class="form-group"><button class="btn btn-primary" type="submit">send </button></div>
+    </form>
+    </div> 
+    <br>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+    <span class="fth1">Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+    <a href="https://www.facebook.com/priyam.singh.777701/" target="_blank" class="me-4 link-secondary">
+    <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="" target="_blank" class="me-4 link-secondary">
+    <i class="fab fa-twitter"></i>
+    </a>
+    <a href="" target="_blank" class="me-4 link-secondary">
+    <i class="fab fa-google"></i>
+    </a>
+    <a href="https://www.instagram.com/priyam___7/" target="_blank" class="me-4 link-secondary">
+    <i class="fab fa-instagram"></i>
+    </a>
+    <a href="" target="_blank" class="me-4 link-secondary">
+    <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/your-username/Priyam9" target="_blank" class="me-4 link-secondary">
+    <i class="fab fa-github"></i>
+    </a>
+    </div>
+    <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="s2">
+    <div class="container text-center text-md-start mt-5">
+    <!-- Grid row -->
+    <div class="row mt-3">
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+    <!-- Content -->
+    <h6 class="text-uppercase fw-bold mb-4">
+      <i class="fas fa-gem me-3 text-secondary"></i>Priyam Singh
+    </h6>
+    <p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d470.9529830196827!2d73.09587383149766!3d19.21162412578837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7958f04ccb289%3A0xe47bb79bf1e0060!2sShree%20Sharnam%20CHS!5e0!3m2!1sen!2sin!4v1698301321966!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </p>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold mb-4">
+      Products
+    </h6>
+    <p class="p1">
+      <a href="#!" class="text-reset">AngularJs</a>
+    </p>
+    <p class="p1">
+      <a href="#!" class="text-reset">Jquery</a>
+    </p>
+    <p class="p1">
+      <a href="#!" class="text-reset">Javascript</a>
+    </p>
+    <p class="p1">
+      <a href="#!" class="text-reset">Html5</a>
+    </p>
+    <p class="p1">
+      <a href="#!" class="text-reset">CSS3</a>
+    </p>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold mb-4">
+      Useful links
+    </h6>
+    <p class="p1">
+      <a href="#!" class="text-reset">Python</a>
+    </p>
+    <p class="p1">
+      <a href="#!" class="text-reset">Django</a>
+    </p>
+    <p class="p1">
+      <a href="#!" class="text-reset">MySQL</a>
+    </p>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+    <p class="p1"><i class="fas fa-home me-3 text-secondary"></i> Mumbai,Dombivli 421201,IND</p>
+    <p class="p1">
+      <a href="mailto:spriyam314@gmail.com"><i class="fas fa-envelope me-3 text-secondary"></i>spriyam314@gmail.com</a>
+    </p>
+    <p class="p1"><i class="fas fa-phone me-3 text-secondary"></i> + 91 9167577044</p>
+    <p class="p1"><i class="fas fa-print me-3 text-secondary"></i> + 91 9167577044</p>
+    </div>
+    <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+    </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div id="t1" class="text-center p-4">
+    © 2023 PriyamSingh:
+    <a class="text-reset fw-bold" href="portfolio.html">PORTFOLIO</a>
+    </div>
+    <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    </body>
+    </html>

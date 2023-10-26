@@ -1,0 +1,76 @@
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    /* CSS for Breadcrumb */
+    .breadcrumb{
+    overflow:hidden;
+    background-color:#007bff;
+    color:white;
+    }
+    .breadcrumb-item{
+    float:left;
+    display:block;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    padding:14px 16px;
+    }
+    .b1{
+    color:white;
+    }
+    .b1:hover{
+    color:black;
+    }
+    /* CSS for Card Border */
+    .card{
+    border:2px solid#0e2d4e;
+    }
+    /* CSS for Card title */
+    .card-title{
+    background-color: #007bff;
+    text-align: center;
+    border-radius: 20px;
+    }
+    /* CSS for Hover effect */
+    .card:hover .card-title{
+    color:white;
+    }
+    .card:hover .card-text{
+    color:#007bff;
+    }
+    /* here we have used element Selector as small is an element<small></small> */
+    small{
+    display: block;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #007bff;
+    }
+    /* CSS for Hover effect */
+    .card:hover small{
+    color:white;
+    }
+
+    .card .card-title .card-text:hover img{
+    transform: scale(1.2);
+    transition-duration:0.8s;
+    border-radius:12px;
+    }
+    /* footer */
+    .fth1{
+    color:#007bff;
+    }
+    .text-uppercase{
+    color:#007bff;
+    }
+    .p1{
+    color:#007bff;
+    }
+    #t1{
+    background-color: #007bff;
+    color:white;
+    }
+    .text-uppercase:hover{
+    color:black;
+    }

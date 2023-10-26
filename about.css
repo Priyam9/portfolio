@@ -1,0 +1,66 @@
+*{
+  margin: 0%;
+  box-sizing: border-box;
+}
+  /* heading for about */
+  .abt{
+    text-align: center;
+    color:#007bff
+  }
+
+  /* css for skills section that are written in blue grid */
+  .abtgrid{
+  text-align: center;
+  background-color:#007bff;
+  margin-top: 80px;
+  margin-left: 100px;
+  width:500px;
+  border-radius: 20px;
+  }
+  #c1,#c2,#c3,#c4{
+    border:2px solid white;
+    border-radius: 20px;
+    width:100px;
+    height:150px;
+    text-align: center;
+    padding-top:65px;
+  }
+
+  /* css for container abtinf that contains grid named place which shows the address info */
+  .abtinf{
+    margin-left: 700px;
+    margin-top: -300px;
+  }
+  .abi{
+    color:#007bff;
+  }
+  .place{
+    display:flex;
+  }
+  .coll2{
+    padding-left:100px;
+  }
+
+/* css for progression bar grid which consists of 3 rows in a container called skillprogressbar */
+   .skillprogressbar{
+  margin-left:-600px;
+  margin-right:100px;
+  text-align: center;
+  } 
+  /* footer */
+.fth1{
+  color:#007bff;
+  }
+  .text-uppercase{
+  color:#007bff;
+  }
+  .p1{
+  color:#007bff;
+  }
+  #t1{
+  background-color: #007bff;
+  color:white;
+  }
+  .text-uppercase:hover{
+  color:black;
+  }

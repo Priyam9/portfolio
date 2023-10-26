@@ -1,0 +1,156 @@
+*{
+margin: 0%;
+box-sizing: border-box;
+}
+/* css for jumbotron */
+.jumbotron{
+background-image: url("https://media-www.sqspcdn.com/images/pages/homepage/aug-2023/hero/desktop/hero-2023-v2-desktop-2-1500w.webp");
+height: 600px;
+color: white;
+background-repeat: no-repeat;
+}
+
+/* project heading h1 */
+.projectheading{
+text-align: center;
+justify-content: center;
+color:#007bff;
+}
+
+/* css for flip card */
+.flip-card {
+background-color: transparent;
+width: 350px;
+height: 300px;
+perspective: 1000px;
+}
+
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.6s;
+transform-style: preserve-3d;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.flip-card-front {
+background-color: #bbb;
+color: black;
+}
+
+.flip-card-back {
+background-color:#007bff;
+color: white;
+transform: rotateY(180deg);
+}
+
+/* Contact-Us Form */
+.contact-clean {
+background:#007bff;
+padding: 80px 0
+}
+@media (max-width:767px) {
+.contact-clean {
+padding: 20px 0
+}
+}
+.contact-clean form {
+max-width: 480px;
+width: 90%;
+margin: 0 auto;
+background-color: #ffffff;
+padding: 40px;
+border-radius: 4px;
+color: #505e6c;
+box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+}
+@media (max-width:767px) {
+.contact-clean form {
+padding: 30px
+}
+}
+.contact-clean h2 {
+margin-top: 5px;
+font-weight: bold;
+font-size: 28px;
+margin-bottom: 36px;
+color: inherit
+}
+.contact-clean .form-group:last-child {
+margin-bottom: 5px
+}
+.contact-clean form .form-control {
+background: #fff;
+border-radius: 2px;
+box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+outline: none;
+color: inherit;
+padding-left: 12px;
+height: 42px
+}
+.contact-clean form .form-control:focus {
+border: 1px solid #b2b2b2
+}
+.contact-clean form textarea.form-control {
+min-height: 100px;
+max-height: 260px;
+padding-top: 10px;
+resize: vertical;
+resize: none
+}
+.contact-clean form .btn {
+padding: 16px 32px;
+border: none;
+box-shadow: none;
+text-shadow: none;
+opacity: 0.9;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 13px;
+letter-spacing: 0.4px;
+line-height: 1;
+outline: none !important
+}
+.contact-clean form .btn:hover {
+opacity: 1
+}
+.contact-clean form .btn:active {
+transform: translateY(1px)
+}
+.contact-clean form .btn-primary {
+background-color:#007bff;
+margin-top: 15px;
+color: #fff
+}
+
+/* footer */
+.fth1{
+color:#007bff;
+}
+.text-uppercase{
+color:#007bff;
+}
+.p1{
+color:#007bff;
+}
+#t1{
+background-color: #007bff;
+color:white;
+}
+.text-uppercase:hover{
+color:black;
+}
