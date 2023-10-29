@@ -136,7 +136,10 @@ background-color:#007bff;
 margin-top: 15px;
 color: #fff
 }
-
+.error{
+    padding-left: 35px;
+    color: red;
+}
 /* footer */
 .fth1{
 color:#007bff;
